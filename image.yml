@@ -1,0 +1,9 @@
+- hosts: imageservers
+  become: yes
+  roles:
+    - common
+    - mysql
+    - nginx
+    - webapp-go
+    - webapp-ruby
+    - image
